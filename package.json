@@ -1,6 +1,6 @@
 {
  "name": "QR-Code-Generator",
- "version": "1.0",
+ "version": "1.0.0",
  "description":"QR Code Generator for Offer",
  "author":"kenneth.heung@oracle.com",
  "script": {
@@ -8,8 +8,8 @@
  },
  "dependencies": {
     "express": "^4.14.0",
-    "https": "1.0.0",
-    "qr-image": "3.2.0"
+    "https": "^1.0.0",
+    "qr-image": "^3.2.0"
  },
  "engines": {
    "node": ">=0.12.0"
