@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "description":"QR Code Generator for Offer",
  "author":"kenneth.heung@oracle.com",
- "script": {
+ "scripts": {
    "prepublish": "zip -r target/qrcodegenerator.zip node_modules manifest.json *.js"
  },
  "dependencies": {
