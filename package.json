@@ -1,11 +1,19 @@
 {
-
+ "name": "QR-Code-Generator",
+ "version": "1.0",
+ "description":"QR Code Generator for Offer",
+ "author":"kenneth.heung@oracle.com",
+ "script": {
+   "prepublish": "zip -r target/qrcodegenerator.zip node_modules manifest.json *.js"
+ },
  "dependencies": {
     "express": "^4.14.0",
     "https": "1.0.0",
     "qr-image": "3.2.0"
+ },
+ "engines": {
+   "node": ">=0.12.0"
  }
-
 
 
 
