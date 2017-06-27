@@ -3,7 +3,7 @@ var app = express();
 var fs = require('fs');
 var https = require('https');
 var qr = require('qr-image');
-
+var PORT = process.env.PORT || 8080;
 app.get('/ctdqr/v1/offer/:id', function (req, res) {
        console.log( "sending databack" );
        var theurl = 'https://orcl.asia/ptmgt/v1/offers/' + req.params.id;
@@ -14,7 +14,7 @@ app.get('/ctdqr/v1/offer/:id', function (req, res) {
 
 })
 
-var server = app.listen(8081, function () {
+  var server = app.listen(PORT, function () {
 
   var host = server.address().address
   var port = server.address().port
