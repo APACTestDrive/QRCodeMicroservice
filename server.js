@@ -6,7 +6,7 @@ var qr = require('qr-image');
 var PORT = process.env.PORT || 8080;
 app.get('/ctdqr/v1/offer/:id', function (req, res) {
        console.log( "sending databack" );
-       var theurl = 'https://orcl.asia/ptmgt/v1/offers/' + req.params.id;
+       var theurl = 'https://offer-gse00010885.apaas.em3.oraclecloud.com/ptmgt/v1/offers/' + req.params.id;
 
       var code = qr.image(theurl, {type:'png'});
       res.type('png');
