@@ -9,7 +9,7 @@ app.get('/ctdqr/v1/offer/:id', function (req, res) {
       // change the URL with your Offer Microservice endpoint
       // the URL format will be
       //   https://{application-name}-{identitydomain}.apaas.{datacenter}.oraclecloud.com/ptmgt/v1/offers/
-      var theurl = 'https://offer-gse00010885.apaas.em3.oraclecloud.com/ptmgt/v1/offers/' + req.params.id;
+      var theurl = 'https://offer-gse00000000.apaas.em3.oraclecloud.com/ptmgt/v1/offers/' + req.params.id;
       var code = qr.image(theurl, {type:'png'});
       // set response type to PNG
       res.type('png');
